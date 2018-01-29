@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="eventskenya.elmaxdevelopers.co.ke.activity.ServiceImagesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <eventskenya.elmaxdevelopers.co.ke.views.SquaredFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <ImageView
+                    style="@style/ServiceAllImages"
+                    android:id="@+id/activity_service_image_main"/>
+            </eventskenya.elmaxdevelopers.co.ke.views.SquaredFrameLayout>
+            <eventskenya.elmaxdevelopers.co.ke.views.SquaredFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <ImageView
+                    style="@style/ServiceAllImages"
+                    android:id="@+id/activity_service_image_one"/>
+            </eventskenya.elmaxdevelopers.co.ke.views.SquaredFrameLayout>
+            <eventskenya.elmaxdevelopers.co.ke.views.SquaredFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <ImageView
+                    style="@style/ServiceAllImages"
+                    android:id="@+id/activity_service_image_two"/>
+            </eventskenya.elmaxdevelopers.co.ke.views.SquaredFrameLayout>
+            <eventskenya.elmaxdevelopers.co.ke.views.SquaredFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <ImageView
+                    style="@style/ServiceAllImages"
+                    android:id="@+id/activity_service_image_three"/>
+            </eventskenya.elmaxdevelopers.co.ke.views.SquaredFrameLayout>
+            <eventskenya.elmaxdevelopers.co.ke.views.SquaredFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <ImageView
+                    style="@style/ServiceAllImages"
+                    android:id="@+id/activity_service_image_four"/>
+            </eventskenya.elmaxdevelopers.co.ke.views.SquaredFrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

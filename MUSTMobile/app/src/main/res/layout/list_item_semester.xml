@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/default_container_padding"
+    android:background="@drawable/cornered_box_background"
+    android:baselineAligned="false">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="2"
+        android:layout_marginBottom="@dimen/default_bottom_margin">
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                style="@style/TableItem"
+                android:text="@string/label_reporting"/>
+            <TextView
+                style="@style/TableItem"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                android:text="@string/label_new_students"
+                style="@style/TableItem"/>
+            <TextView
+                android:id="@+id/list_item_semester_new_students_reporting"
+                style="@style/TableItem"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+            <TextView
+                android:text="@string/label_continuing_students"
+                style="@style/TableItem"/>
+            <TextView
+                android:id="@+id/list_item_semester_continuing_students_reporting"
+                style="@style/TableItem"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+            <TextView
+                android:text="@string/label_commencement"
+                style="@style/TableItem"/>
+            <TextView
+                android:id="@+id/list_item_semester_commencement_of_lectures"
+                style="@style/TableItem"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+            <TextView
+                android:text="@string/label_cat_one"
+                style="@style/TableItem"/>
+            <TextView
+                android:id="@+id/list_item_semester_cat_two"
+                style="@style/TableItem"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+            <TextView
+                android:text="@string/label_cat_two"
+                style="@style/TableItem"/>
+            <TextView
+                android:id="@+id/list_item_semester_cat_one"
+                style="@style/TableItem"/>
+        </TableRow>
+
+
+        <TableRow
+            style="@style/TableRowStyles">
+            <TextView
+                android:text="@string/label_end_of_lectures"
+                style="@style/TableItem"/>
+            <TextView
+                android:id="@+id/list_item_semester_end_of_lectures"
+                style="@style/TableItem"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+            <TextView
+                android:text="@string/label_examinations"
+                style="@style/TableItem"/>
+            <TextView
+                android:id="@+id/list_item_semester_examination_dates"
+                style="@style/TableItem"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                android:text="@string/label_teaching_weeks"
+                style="@style/TableItem"/>
+            <TextView
+                android:id="@+id/list_item_semester_teaching_weeks"
+                style="@style/TableItem"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                android:text="@string/label_examination_weeks"
+                style="@style/TableItem"/>
+            <TextView
+                android:id="@+id/list_item_semester_examination_weeks"
+                style="@style/TableItem"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                android:text="@string/label_semester_break"
+                style="@style/TableItem"/>
+            <TextView
+                android:id="@+id/list_item_semester_break"
+                style="@style/TableItem"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                android:text="@string/label_break_weeks"
+                style="@style/TableItem"/>
+            <TextView
+                android:id="@+id/list_item_semester_break_weeks"
+                style="@style/TableItem"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:text="@string/label_remarks"/>
+
+        <TextView
+            android:id="@+id/list_item_semester_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

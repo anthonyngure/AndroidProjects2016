@@ -1,0 +1,17 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_fragment_academics_my_grades"
+        android:title="@string/my_grades"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_fragment_academics_programs"
+        android:title="@string/action_programs"
+        app:showAsAction="never"/>
+
+</menu>

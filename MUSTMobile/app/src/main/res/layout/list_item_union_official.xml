@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/default_container_padding">
+
+
+    <com.mustmobile.util.RoundImage
+        android:id="@+id/list_item_union_official_profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/image_loader"/>
+
+    <TextView
+        android:id="@+id/list_item_union_official_name"
+        android:layout_toRightOf="@id/list_item_union_official_profile"
+        android:layout_toEndOf="@id/list_item_union_official_profile"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textColor="@color/theme"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/list_item_union_official_post"
+        android:layout_toRightOf="@id/list_item_union_official_profile"
+        android:layout_toEndOf="@id/list_item_union_official_profile"
+        android:layout_below="@id/list_item_union_official_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:typeface="sans"
+        android:textColor="@color/theme"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/list_item_union_official_message_title"
+        android:layout_below="@id/list_item_union_official_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textColor="@color/light_orange"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/list_item_union_official_message"
+        android:layout_below="@id/list_item_union_official_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:typeface="sans"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

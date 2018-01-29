@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/title_follow_us">
+
+        <Preference
+            android:key="@string/pref_facebook"
+            android:title="@string/title_facebook"
+            android:summary="@string/company_facebook"
+            android:icon="@drawable/pref_facebook">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/company_facebook"/>
+        </Preference>
+        <Preference
+            android:key="@string/pref_twitter"
+            android:title="@string/title_twitter"
+            android:summary="@string/company_twitter"
+            android:icon="@drawable/pref_twitter">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/company_twitter"/>
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/title_help_and_feedback">
+        <Preference
+            android:key="@string/pref_whatsapp"
+            android:title="@string/title_whatsapp"
+            android:summary="Send a message to our WhatsApp.">
+        </Preference>
+        <Preference
+            android:key="@string/pref_email"
+            android:title="@string/title_company"
+            android:summary="@string/company_email"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/title_website">
+        <Preference
+            android:title="@string/title_company"
+            android:summary="@string/company_website">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/company_website"/>
+        </Preference>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

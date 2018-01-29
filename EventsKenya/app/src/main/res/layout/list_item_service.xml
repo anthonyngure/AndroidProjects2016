@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:layout_height="match_parent">
+
+        <!-- Service Name -->
+        <TextView
+            style="@style/Name"
+            android:textSize="15sp"
+            android:id="@+id/list_item_service_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:text="Lorem ipsum me a say"/>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_below="@+id/list_item_service_name"
+            android:id="@+id/list_item_service_logo"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ke.co.elmaxdevelopers.eventskenya.views.SquaredImageView
+                android:id="@+id/list_item_service_one"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_margin="8dp"/>
+            <ke.co.elmaxdevelopers.eventskenya.views.SquaredImageView
+                android:id="@+id/list_item_service_two"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/Description"
+            android:id="@+id/list_item_service_description"
+            android:layout_toEndOf="@id/list_item_service_logo"
+            android:layout_toRightOf="@id/list_item_service_logo"
+            android:layout_below="@id/list_item_service_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:maxLength="320"/>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_below="@id/list_item_service_logo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="bottom"
+            android:background="#cccccc"/>
+
+        <LinearLayout
+            android:layout_below="@id/separator"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/list_item_service_message"
+                style="@style/ServiceAction"
+                android:text="Sms" />
+
+            <Button
+                android:id="@+id/list_item_service_call"
+                style="@style/ServiceAction"
+                android:text="Call"/>
+
+            <Button
+                android:id="@+id/list_item_service_email"
+                style="@style/ServiceAction"
+                android:text="Email"/>
+
+            <Button
+                style="@style/ServiceAction"
+                android:id="@+id/list_item_service_save_button"
+                android:text="@string/save"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

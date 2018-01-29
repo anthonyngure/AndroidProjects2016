@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Event Name -->
+    <TextView
+        android:id="@+id/list_item_event_name"
+        style="@style/Name"/>
+
+    <!-- Venue -->
+    <TextView
+        android:id="@+id/list_item_event_venue"
+        android:layout_below="@id/list_item_event_name"
+        style="@style/Venue"/>
+</RelativeLayout>

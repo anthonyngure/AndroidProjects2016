@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+
+    <com.mustmobile.util.RoundImage
+        android:id="@+id/list_item_exchange_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/image_loader"/>
+
+    <TextView
+        android:id="@+id/list_item_exchange_author"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/list_item_exchange_profile"
+        android:layout_toRightOf="@id/list_item_exchange_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/theme"
+        android:textAppearance="@android:color/primary_text_dark_nodisable"
+        android:text="Author"/>
+
+    <TextView
+        android:id="@+id/list_item_exchange_content"
+        android:layout_below="@id/list_item_exchange_author"
+        android:layout_toEndOf="@id/list_item_exchange_profile"
+        android:layout_toRightOf="@id/list_item_exchange_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:autoLink="all"
+        android:textAppearance="@android:color/primary_text_dark_nodisable"
+        android:text="Content"/>
+
+    <TextView
+        android:id="@+id/list_item_exchange_time"
+        android:layout_below="@id/list_item_exchange_content"
+        android:layout_toEndOf="@id/list_item_exchange_profile"
+        android:layout_toRightOf="@id/list_item_exchange_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/light_orange"
+        android:textAppearance="@android:color/primary_text_dark_nodisable"
+        android:text="2 hours ago"/>
+
+
+</RelativeLayout>

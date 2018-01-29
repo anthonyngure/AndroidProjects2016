@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="0dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <Button
+                style="@style/FormButtons"
+                android:id="@+id/button_start_time"
+                android:text="Start Time"/>
+            <TextView
+                style="@style/FormValues"
+                android:id="@+id/set_start_time"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <Button
+                style="@style/FormButtons"
+                android:id="@+id/button_start_date"
+                android:text="Start Date"/>
+            <TextView
+                style="@style/FormValues"
+                android:id="@+id/set_start_date" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="0dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <Button
+                style="@style/FormButtons"
+                android:id="@+id/button_end_time"
+                android:text="End Time"/>
+            <TextView
+                style="@style/FormValues"
+                android:id="@+id/set_end_time"
+                android:text="10:50 AM"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <Button
+                style="@style/FormButtons"
+                android:id="@+id/button_end_date"
+                android:text="End Date"/>
+            <TextView
+                style="@style/FormValues"
+                android:id="@+id/set_end_date"
+                android:text="Jan 10, 2016"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

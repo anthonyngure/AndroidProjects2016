@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/activity_main_action_create_event"
+        android:title="New event"/>
+    <item android:title="Quick settings">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/drawer_action_change_county"
+                    android:title="Change county"/>
+                <item
+                    android:id="@+id/drawer_action_change_category"
+                    android:title="Change category"/>
+                <item
+                    android:id="@+id/drawer_action_auto_download_posters"
+                    android:checkable="true"
+                    android:title="Auto download posters"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Services">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/activity_main_action_more_services"
+                    android:title="@string/action_event_services" />
+                <item
+                    android:id="@+id/activity_main_action_more_organizers"
+                    android:title="@string/action_event_organizers" />
+                <item
+                    android:id="@+id/activity_main_action_more_entertainers"
+                    android:title="@string/action_event_entertainers" />
+                <item
+                    android:id="@+id/activity_main_action_add_your_card"
+                    android:title="@string/action_add_your_card"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/drawer_action_settings"
+                android:icon="@drawable/ic_dashboard"
+                android:title="Settings" />
+            <item
+                android:id="@+id/drawer_action_help_and_feedback"
+                android:icon="@drawable/ic_forum"
+                android:title="Help and Feedback" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stages">
+        <item>Y1S1</item>
+        <item>Y1S2</item>
+        <item>Y2S1</item>
+        <item>Y2S2</item>
+        <item>Y3S1</item>
+        <item>Y3S2</item>
+        <item>Y4S1</item>
+        <item>Y4S2</item>
+    </string-array>
+    <string-array name="programs">
+        <item>Bachelor Of Science In Mathematics and Computer Science</item>
+        <item>Bachelor Of Science In Computer Science</item>
+        <item>Bachelor Of Science In Actuarial Science</item>
+        <item>Bachelor Of Science In Statistics</item>
+        <item>Bachelor Of Science(Physical Option)</item>
+        <item>Bachelor Of Science(Biological Option)</item>
+        <item>Bachelor Of Education(Science)</item>
+        <item>Bachelor Of Commerce</item>
+        <item>Bachelor Of Business Information Technology</item>
+        <item>Bachelor Of Purchasing and Supply Management</item>
+        <item>Bachelor Of Business Administration</item>
+        <item>Bachelor Of Co - operative Management</item>
+        <item>Bachelor Of Science In Economics</item>
+        <item>Bachelor Of Science In Public Health</item>
+        <item>Bachelor Of Science (Community Health and Development)</item>
+        <item>Bachelor Of Science In Information Science</item>
+        <item>Bachelor Of Science In Computer Technology</item>
+        <item>Bachelor Of Technology In Electrical and Electronic Engineering</item>
+        <item>Bachelor Of Technology In Civil Engineering</item>
+        <item>Bachelor Of Technology In Mechanical Engineering</item>
+        <item>Bachelor Of Science In Information Technology</item>
+        <item>Bachelor Of Science In Agribusiness Management</item>
+        <item>Bachelor Of Science In Agriculture</item>
+        <item>Bachelor Of Science In Animal Production</item>
+        <item>Bachelor Of Science In Agriculture Education and Extension</item>
+        <item>Bachelor Of Science In Crop Protection</item>
+        <item>Bachelor Of Science In Horticulture</item>
+        <item>Bachelor Of Science In Food Science and Technology</item>
+        <item>Bachelor Of Science In Food Science In Nutrition and Dietetics</item>
+        <item>Bachelor Of Science In Food Science and Management</item>
+    </string-array>
+</resources>

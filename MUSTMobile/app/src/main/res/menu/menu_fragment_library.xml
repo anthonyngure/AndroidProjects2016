@@ -1,0 +1,36 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mustmobile.fragment.library.BooksFragment">
+
+    <item
+        android:id="@+id/activity_main_search"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_action_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <!--
+    <item
+        android:id="@+id/fragment_library_search_notes"
+        android:title="Search notes"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_fragment_library_renew_a_book"
+        android:title="@string/action_renew_a_book"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_fragment_library_share_books"
+        android:title="@string/action_share_books"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_fragment_library_guide"
+        android:title="@string/action_library_guide"
+        app:showAsAction="never"/>
+-->
+
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Updates Notification">
+        <CheckBoxPreference
+            android:key="@string/pref_check_updates"
+            android:title="Updates"
+            android:summary="Receive notifications on latest updates, news and events."
+            android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:key="@string/pref_notification_tones"
+            android:title="Notification tones"
+            android:summary="Play sound for incoming notifications."
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Exchanges Notification">
+        <CheckBoxPreference
+            android:key="@string/pref_check_exchanges"
+            android:title="Exchanges"
+            android:summary="Receive notifications on new exchanges in topics you have contributed."
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:key="@string/pref_exchange_tones"
+            android:title="Exchange tones"
+            android:summary="Play sound for incoming and outgoing exchanges."
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Account">
+        <CheckBoxPreference
+            android:key="@string/pref_is_first_run"
+            android:title="Log out my account"
+            android:summary="All your account data will be cleared."
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Campus Proxy">
+        <CheckBoxPreference
+            android:key="@string/pref_use_campus_proxy"
+            android:title="Use Campus Proxy"
+            android:summary="Enable connection behind campus proxy."
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

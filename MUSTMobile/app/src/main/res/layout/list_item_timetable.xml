@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/default_container_padding"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/list_item_timetable_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/theme"
+        android:textSize="16sp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textAppearance="@android:color/secondary_text_light_nodisable"
+        android:text="Monday"/>
+
+    <TextView
+        android:id="@+id/list_item_timetable_hour_one"
+        style="@style/TimetableData"/>
+
+    <TextView
+        android:id="@+id/list_item_timetable_hour_two"
+        style="@style/TimetableData"/>
+    <TextView
+        android:id="@+id/list_item_timetable_hour_three"
+        style="@style/TimetableData"/>
+    <TextView
+        android:id="@+id/list_item_timetable_hour_four"
+        style="@style/TimetableData"/>
+    <TextView
+        android:id="@+id/list_item_timetable_hour_five"
+        style="@style/TimetableData"/>
+    <TextView
+        android:id="@+id/list_item_timetable_hour_six"
+        style="@style/TimetableData"/>
+    <TextView
+        android:id="@+id/list_item_timetable_hour_seven"
+        style="@style/TimetableData"/>
+    <TextView
+        android:id="@+id/list_item_timetable_hour_eight"
+        style="@style/TimetableData"/>
+    <TextView
+        android:id="@+id/list_item_timetable_hour_nine"
+        style="@style/TimetableData"/>
+    <TextView
+        android:id="@+id/list_item_timetable_hour_ten"
+        style="@style/TimetableData"/>
+
+</LinearLayout>

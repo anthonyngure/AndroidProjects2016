@@ -1,0 +1,123 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_container_padding"
+    tools:context="com.mustmobile.fragment.academics.AcademicsFragment">
+
+    <ImageView
+        android:id="@+id/fragment_academics_log"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/logo_height"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="@dimen/logo_margin_bottom"/>
+
+    <Button
+        android:id="@+id/fragment_academics_button_register_units"
+        android:layout_below="@id/fragment_academics_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:gravity="start|center"
+        android:drawableLeft="@drawable/ic_action_register_units"
+        android:drawableStart="@drawable/ic_action_register_units"
+        android:drawablePadding="0dp"
+        android:onClick="showUnImplemented"
+        android:text="@string/units_registration"/>
+
+    <TextView
+        android:id="@+id/fragment_academics_heading"
+        android:layout_below="@id/fragment_academics_button_register_units"
+        style="@style/Heading"
+        android:layout_marginBottom="@dimen/default_bottom_margin"
+        android:text="@string/academics_notice_board"/>
+
+    <FrameLayout
+        android:layout_below="@id/fragment_academics_heading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/fragment_academics_loading_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/nano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"/>
+            <TextView
+                android:layout_below="@id/nano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Loading..."/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_academics_no_connection"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/no_connection"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/red"
+                android:textAppearance="@android:color/secondary_text_dark_nodisable"
+                android:typeface="serif"
+                android:textSize="16sp"
+                android:text="@string/no_connection_message"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/fragment_academics_retry_button"
+                    android:text="@string/button_retry"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:id="@+id/fragment_academics_report_button"
+                    android:visibility="gone"
+                    android:text="@string/button_report"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/fragment_academics_listview"
+            style="@style/ToshListView">
+        </ListView>
+    </FrameLayout>
+
+</RelativeLayout>

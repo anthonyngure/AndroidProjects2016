@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AboutSubHeadings"
+                android:text="@string/system_name"/>
+
+            <TextView
+                style="@style/AboutInfors"
+                android:text="@string/about_system_info"/>
+
+            <TextView
+                style="@style/AboutInfors"
+                android:text="@string/system_version"/>
+
+            <TextView
+                style="@style/AboutSubHeadings"
+                android:text="@string/custom_name"/>
+            <TextView
+                style="@style/AboutInfors"
+                android:text="@string/custom_version"/>
+
+            <TextView
+                style="@style/AboutInfors"
+                android:text="@string/about_intro"/>
+
+            <TextView
+                style="@style/AboutInfors"
+                android:text="@string/about_crash"/>
+
+            <TextView
+                style="@style/AboutHeadings"
+                android:text="@string/label_open_source"/>
+
+            <TextView
+                style="@style/AboutInfors"
+                android:text="@string/about_open_source_intro"/>
+
+            <TextView
+                style="@style/AboutSubHeadings"
+                android:text="@string/label_picasso"/>
+
+            <TextView
+                style="@style/AboutInfors"
+                android:text="@string/about_picasso_info"/>
+
+            <TextView
+                style="@style/AboutHeadings"
+                android:text="@string/about_label_development"/>
+
+            <TextView
+                style="@style/AboutSubHeadings"
+                android:text="@string/label_developer"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <com.mustmobile.util.RoundImage
+                    android:id="@+id/about_profile_developer"
+                    android:layout_alignParentTop="true"
+                    style="@style/DevelopersProfile"
+
+                    android:tag="1"
+                    android:src="@drawable/developer"/>
+
+                <TextView
+                    style="@style/DevelopersInfors"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/about_profile_developer"
+                    android:layout_toEndOf="@id/about_profile_developer"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/about_developer_info"/>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/AboutSubHeadings"
+                android:text="@string/label_support"/>
+
+            <TextView
+                style="@style/AboutInfors"
+                android:layout_marginBottom="10dp"
+                android:text="@string/about_support_intro"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <com.mustmobile.util.RoundImage
+                    android:id="@+id/about_profile_makau"
+                    android:layout_alignParentTop="true"
+                    style="@style/DevelopersProfile"
+                    android:tag="2"
+                    android:src="@drawable/makau"/>
+
+                <TextView
+                    style="@style/DevelopersInfors"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/about_profile_makau"
+                    android:layout_toEndOf="@id/about_profile_makau"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/about_makau_info"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <com.mustmobile.util.RoundImage
+                    android:id="@+id/about_profile_peter"
+                    android:layout_alignParentTop="true"
+                    style="@style/DevelopersProfile"
+                    android:tag="3"
+                    android:src="@drawable/peter"/>
+
+                <TextView
+                    style="@style/DevelopersInfors"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/about_profile_peter"
+                    android:layout_toEndOf="@id/about_profile_peter"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/about_wamenju_info"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

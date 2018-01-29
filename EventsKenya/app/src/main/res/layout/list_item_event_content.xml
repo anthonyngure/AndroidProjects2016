@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/list_item_event_image"/>
+
+        <LinearLayout
+            style="@style/ListViewContainer"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:00AM to 12:00PM"
+                android:layout_marginRight="10dp"
+                android:textSize="12sp"
+                android:id="@+id/list_item_event_time"/>
+
+            <!-- Date -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Jan 25"
+                android:id="@+id/list_item_event_date"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/ListViewContainer">
+
+            <!-- Description -->
+            <TextView
+                style="@style/Description"
+                android:maxLength="320"
+                android:id="@+id/list_item_event_description"/>
+
+        </RelativeLayout>
+
+        <!-- Comments container-->
+        <LinearLayout
+            style="@style/ListViewContainer"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <!-- Comment 1 cont-->
+
+            <LinearLayout
+                style="@style/CommentContainer"
+                android:id="@+id/list_item_event_comment_1_container">
+
+                <TextView
+                    style="@style/CommentDetails"
+                    android:id="@+id/list_item_event_comment_1_details"/>
+
+                <TextView
+                    style="@style/CommentContent"
+                    android:id="@+id/list_item_event_comment_1_content"/>
+
+            </LinearLayout>
+
+            <!-- Comment two cont-->
+            <LinearLayout
+                style="@style/CommentContainer"
+                android:id="@+id/list_item_event_comment_2_container">
+
+                <TextView
+                    style="@style/CommentDetails"
+                    android:id="@+id/list_item_event_comment_2_details"/>
+
+                <TextView
+                    style="@style/CommentContent"
+                    android:id="@+id/list_item_event_comment_2_content"/>
+            </LinearLayout>
+
+            <!-- Comment three cont-->
+            <LinearLayout
+                style="@style/CommentContainer"
+                android:id="@+id/list_item_event_comment_3_container">
+
+
+                <TextView
+                    style="@style/CommentDetails"
+                    android:id="@+id/list_item_event_comment_3_details"/>
+
+                <TextView
+                    style="@style/CommentContent"
+                    android:id="@+id/list_item_event_comment_3_content"/>
+            </LinearLayout>
+
+            <!-- Comment four cont-->
+            <LinearLayout
+                style="@style/CommentContainer"
+                android:id="@+id/list_item_event_comment_4_container">
+
+                <TextView
+                    style="@style/CommentDetails"
+                    android:id="@+id/list_item_event_comment_4_details"/>
+
+                <TextView
+                    style="@style/CommentContent"
+                    android:id="@+id/list_item_event_comment_4_content"/>
+            </LinearLayout>
+
+            <!-- Comment five cont-->
+            <LinearLayout
+                style="@style/CommentContainer"
+                android:id="@+id/list_item_event_comment_5_container">
+                <TextView
+                    style="@style/CommentDetails"
+                    android:id="@+id/list_item_event_comment_5_details"/>
+
+                <TextView
+                    style="@style/CommentContent"
+                    android:id="@+id/list_item_event_comment_5_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ListViewContainer">
+            <TextView
+                style="@style/SeeAllComments"
+                android:id="@+id/list_item_event_button_see_all_comments"/>
+        </LinearLayout>
+
+        <!-- No. going, No. following and No. of comments-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <!-- No of people going -->
+            <TextView
+                android:id="@+id/list_item_event_no_going"
+                style="@style/ClickNumberView"
+                android:text="@string/zero_going"/>
+
+            <!-- No of people interested -->
+            <TextView
+                android:id="@+id/list_item_event_no_interested"
+                style="@style/ClickNumberView"
+                android:text="@string/zero_interested"/>
+
+
+            <Button
+                style="@style/AddComment"
+                android:id="@+id/list_item_event_button_write_comment"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp">
+
+            <ImageButton
+                style="@style/EventAction"
+                android:id="@+id/list_item_event_button_going"
+                android:layout_gravity="end|bottom"
+                android:src="@drawable/ic_action_go"/>
+
+            <ProgressBar
+                style="@style/FollowingGoingUpdateProgress"
+                android:id="@+id/list_item_event_following_going_update_progress"/>
+
+            <ImageButton
+                style="@style/EventAction"
+                android:id="@+id/list_item_event_button_follow"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_action_interested"/>
+
+            <ImageButton
+                style="@style/EventAction"
+                android:id="@+id/list_item_event_button_details"
+                android:src="@drawable/ic_action_details"/>
+
+            <ImageButton
+                style="@style/EventAction"
+                android:id="@+id/list_item_event_overflow"
+                android:src="@drawable/popup"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

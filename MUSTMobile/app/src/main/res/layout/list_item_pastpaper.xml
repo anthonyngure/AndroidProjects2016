@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_container_padding">
+
+    <ImageView
+        android:id="@+id/list_item_pastpaper_cover"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pdf"/>
+
+    <TextView
+        android:id="@+id/list_item_pastpaper_name"
+        android:layout_toRightOf="@id/list_item_pastpaper_cover"
+        android:layout_toEndOf="@id/list_item_pastpaper_cover"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:textColor="@color/theme"
+        android:typeface="serif"
+        android:textSize="14sp"
+        android:text="@string/placeholder_book_title"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/list_item_pastpaper_availability"
+        android:layout_toRightOf="@id/list_item_pastpaper_cover"
+        android:layout_toEndOf="@id/list_item_pastpaper_cover"
+        android:layout_below="@id/list_item_pastpaper_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:textColor="@color/black"
+        android:typeface="serif"
+        android:textSize="12sp"
+        android:text="@string/document_availability"/>
+
+</RelativeLayout>

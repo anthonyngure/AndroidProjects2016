@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'WAMBui25'
+            keyPassword 'WAMBui25'
+            storeFile file('D:/AndroidStudioProjects/MUSTMobile/keystore/tosh.jks')
+            storePassword 'WAMBui25'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+    defaultConfig {
+        applicationId "com.mustmobile"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 2
+        versionName '1.0.1'
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            jniDebuggable false
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //compile 'com.android.support:preferences-v7:23.1.0'
+    //compile 'com.android.support:preferences-v14:23.0.0'
+    compile files('libs/android-async-http-1.4.9.jar')
+    compile files('libs/httpclient-4.3.3.jar')
+    compile files('libs/picasso-2.5.2.jar')
+    compile files('libs/joda-time-2.1.jar')
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.google.android.gms:play-services:7.8.0'
+}

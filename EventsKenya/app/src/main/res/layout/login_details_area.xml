@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    android:id="@+id/login_details_area">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
+        android:gravity="center"
+        android:text="@string/app_name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:text="Best community of event lovers in Kenya."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+        android:text="Find the best Event Services"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:text="Event Organizers, Managers, Planners, Entertainers, Music and Sound Systems, Venues, Tents, Chairs, Catering etc."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:text="Free to join (no passwords to remember), post events and promote your services."/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/activity_login_inputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/activity_login_username_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_username"
+            android:textColor="@android:color/white"
+            android:inputType="textCapWords|textNoSuggestions"
+            android:imeOptions="actionDone"
+            android:maxLength="20"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:textAppearance="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="requestUsername"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:id="@+id/activity_login_button_continue"
+        android:text="@string/button_continue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/activity_login_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I Agree to "/>
+        <TextView
+            android:id="@+id/activity_login_terms_and_conditions"
+            android:onClick="checkTermsAndConditions"
+            android:gravity="center|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:text="Terms and Conditions"/>
+    </LinearLayout>
+</LinearLayout>

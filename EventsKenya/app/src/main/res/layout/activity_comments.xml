@@ -1,0 +1,62 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eventskenya.elmaxdevelopers.co.ke.activity.CommentsActivity">
+
+    <LinearLayout
+        android:id="@+id/first_install_input_username"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:background="#cccccc"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/activity_comments_inputlayout"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/activity_comments_write_a_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textCapSentences"
+                android:imeOptions="actionDone"
+                android:maxLength="160"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/hint_type_comment"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageButton
+            style="@style/EventAction"
+            android:layout_gravity="center|center_vertical"
+            android:onClick="sendComment"
+            android:src="@drawable/ic_action_send"/>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/first_install_input_username"
+        android:id="@+id/swipe_refresh_layout">
+
+        <ListView
+            android:id="@+id/activity_comments_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="alwaysScroll"
+            android:divider="@null"
+            android:fastScrollEnabled="false"
+            android:layout_alignTop="@+id/swipe_refresh_layout"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/dialog_image_preview_image"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:src="@drawable/default_profile"/>
+    <TextView
+        android:id="@+id/dialog_image_preview_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/theme"
+        android:textSize="16dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textAppearance="@android:color/secondary_text_light_nodisable"/>
+
+
+</LinearLayout>

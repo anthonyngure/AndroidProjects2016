@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Program of study">
+        <ListPreference
+            android:key="@string/pref_user_program"
+            android:title="Program of study"
+            android:summary="@string/pref_default_user_program"
+            android:dialogTitle="Select your program"
+            android:entries="@array/programs"
+            android:entryValues="@array/programs"
+            android:defaultValue="@string/pref_default_user_program" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Program initials">
+        <EditTextPreference
+            android:key="@string/pref_user_program_code"
+            android:title="Program initials"
+            android:summary="@string/pref_default_program_code"
+            android:defaultValue=""/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Stage of study">
+        <ListPreference
+            android:key="@string/pref_user_stage"
+            android:title="Stage"
+            android:summary="@string/pref_user_default_stage"
+            android:dialogTitle="Select your stage"
+            android:entries="@array/stages"
+            android:entryValues="@array/stages"
+            android:defaultValue="@string/pref_user_default_stage" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

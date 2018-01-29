@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:text="@string/heading_about_app"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/yellow_connered_box_bg"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/app_information"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/inaccurate_data_warning"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/services"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/notes_services"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/pastpapers_services"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/timetable_services"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/news_and_events_services"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/news_and_events_reading_services"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/tutorials_services"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/feestructure_services"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/semester_dates_services"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:text="@string/more_features"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/keep_checking"/>
+
+        <Button
+            android:id="@+id/fragment_app_information_button_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_gravity="end"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textSize="@dimen/default_text_size"
+            android:text="@string/button_continue"/>
+    </LinearLayout>
+
+</ScrollView>

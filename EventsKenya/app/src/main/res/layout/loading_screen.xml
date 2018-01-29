@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loading_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ke.co.elmaxdevelopers.eventskenya.views.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_marginBottom="56dp"
+        ProgressWheel:pwText="..."
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        ProgressWheel:pwBarWidth="3dp"
+        ProgressWheel:pwBarLength="30dp"
+        ProgressWheel:pwRimWidth="3dp"/>
+</LinearLayout>

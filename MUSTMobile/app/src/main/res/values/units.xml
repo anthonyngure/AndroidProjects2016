@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ICS2102">Introduction to Computer Programming</string>
+    <string name="ICS2100">Introduction to Computer Systems</string>
+    <string name="SMA2104">Mathematics for Science</string>
+    <string name="SMA2100">Discrete Mathematics</string>
+    <string name="SPH2172">Physics</string>
+    <string name="HRD2101">Communication Skills</string>
+    <string name="SMA2101">Calculus I</string>
+    <string name="SZL2111">HIV/AIDS</string>
+    <string name="SMA2102">Calculus II</string>
+    <string name="SMA2103">Probability and Statistics I</string>
+    <string name="SCH2110">Chemistry</string>
+    <string name="ICS2200">Electronics</string>
+    <string name="ICS2101">Computer Organisation</string>
+    <string name="ICS2104">Object Oriented Programming I</string>
+    <string name="ICS2105">Data Structure and Algorithms</string>
+    <string name="HRD2102">Development Studies and Social Ethics</string>
+    <string name="HRD2103">Introduction to Economics</string>
+    <string name="SMA2201">Linear Algebra I</string>
+    <string name="SMA2230">Probability and Statistics II</string>
+    <string name="SMA2200">Calculus III</string>
+    <string name="ICS2201">Object Oriented Programming II</string>
+    <string name="ICS2">Operating System I</string>
+    <string name="ICS2203">Internet Application Programming</string>
+    <string name="SMA2203">Number Theory</string>
+</resources>

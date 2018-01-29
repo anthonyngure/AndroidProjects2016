@@ -1,0 +1,105 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_container_padding"
+    tools:context="com.mustmobile.fragment.academics.GradesFragment">
+
+    <TextView
+        android:id="@+id/fragment_grades_heading"
+        style="@style/Heading"
+        android:layout_marginBottom="@dimen/default_bottom_margin"
+        android:text="@string/place_holder_grades_heading"/>
+
+    <FrameLayout
+        android:layout_below="@id/fragment_grades_heading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/fragment_grades_loading_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/nano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"/>
+            <TextView
+                android:layout_below="@id/nano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@android:color/holo_blue_light"
+                android:text="Loading..."/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_grades_no_connection"
+            android:visibility="gone"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/no_connection"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/theme"
+                android:text="@string/no_connection_message"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/theme"
+                    android:id="@+id/fragment_grades_retry_button"
+                    android:text="@string/button_retry"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:background="@android:color/holo_red_dark"
+                    android:id="@+id/fragment_grades_report_button"
+                    android:visibility="gone"
+                    android:text="@string/button_report"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ListView
+            android:visibility="gone"
+            android:id="@+id/fragment_grades_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="2dp"
+            android:scrollbars="vertical">
+        </ListView>
+    </FrameLayout>
+
+</RelativeLayout>

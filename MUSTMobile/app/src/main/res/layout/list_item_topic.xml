@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/list_item_overstack_statistics"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/list_item_overstack_views"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAppearance="@android:color/primary_text_dark_nodisable"
+            android:textColor="@color/blue"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/list_item_overstack_answers"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAppearance="@android:color/primary_text_dark_nodisable"
+            android:textColor="@color/red"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/list_item_overstack_question"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/list_item_overstack_statistics"
+        android:layout_toRightOf="@id/list_item_overstack_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/theme"
+        android:typeface="serif"
+        android:textSize="14sp"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:text="Question here"/>
+
+    <LinearLayout
+        android:layout_below="@id/list_item_overstack_question"
+        android:layout_toEndOf="@id/list_item_overstack_statistics"
+        android:layout_toRightOf="@id/list_item_overstack_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/list_item_overstack_tag"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="Tag"/>
+
+        <TextView
+            android:id="@+id/list_item_overstack_author"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:text="Author"/>
+    </LinearLayout>
+</RelativeLayout>

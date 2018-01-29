@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/details_activity_footerview_content"
+    android:visibility="visible"
+    android:layout_height="wrap_content">
+
+    <TextView
+        style="@style/DetailsHeader"
+        android:layout_width="match_parent"
+        android:text="Entrance and Tickets"/>
+
+    <TextView
+        android:id="@+id/details_activity_footerview_tickets_free"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="FREE EVENT"
+        android:textSize="28sp"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/details_activity_footerview_tickets_not_free"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Tickets  Price Bar -->
+            <LinearLayout
+                android:id="@+id/details_activity_footerview_tickets_advance_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/Price"
+                    android:text="Advance"/>
+                <TextView
+                    style="@style/Price"
+                    android:id="@+id/details_activity_footerview_advance"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/details_activity_footerview_tickets_regular_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/Price"
+                    android:text="Regular"/>
+                <TextView
+                    style="@style/Price"
+                    android:id="@+id/details_activity_footerview_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/details_activity_footerview_tickets_vip_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/Price"
+                    android:text="VIP"/>
+                <TextView
+                    android:id="@+id/details_activity_footerview_vip"
+                    style="@style/Price"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/details_activity_footerview_button_buy_ticket"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Buy Ticket"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/DetailsHeader"
+                android:text="Event Promoter"/>
+            <TextView
+                style="@style/Description"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:id="@+id/details_activity_footerview_promoter"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/DetailsHeader"
+                android:text="Event Organizer"/>
+            <TextView
+                style="@style/Description"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:id="@+id/details_activity_footerview_organizer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/DetailsHeader"
+                android:gravity="top"
+                android:text="Created by"/>
+            <TextView
+                style="@style/Description"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="Anthony "
+                android:id="@+id/details_activity_footerview_creator" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/DetailsHeader"
+        android:layout_width="match_parent"
+        android:text="Parking Information"/>
+    <TextView
+        style="@style/Description"
+        android:id="@+id/details_activity_footerview_parking" />
+
+    <TextView
+        style="@style/DetailsHeader"
+        android:layout_width="match_parent"
+        android:text="Security Information"/>
+    <TextView
+        style="@style/Description"
+        android:id="@+id/details_activity_footerview_security" />
+
+</LinearLayout>

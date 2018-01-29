@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:id="@+id/new_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            style="@style/DialogMenu"
+            android:text="New event"/>
+        <TextView
+            style="@style/DialogMenuDescription"
+            android:text="Creating event is free"/>
+    </LinearLayout>
+    <include
+        layout="@layout/separator"/>
+
+    <LinearLayout
+        android:id="@+id/service_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            style="@style/DialogMenu"
+            android:text="Service card"/>
+        <TextView
+            style="@style/DialogMenuDescription"
+            android:text="For event entertainers, planners, managers, organizers and other services eg tents, catering, chairs, venues, music and sound systems etc."/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/separator"/>
+
+    <TextView
+        style="@style/DialogMenuDescription"
+        android:maxLength="140"
+        android:text="The best way to reach out to the biggest community of event lovers in Kenya."/>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="window_background">#FFF5F5F5</color>
+    <color name="colorPrimary">#3cb73a</color>
+    <color name="colorPrimaryDark">#2da848</color>
+    <color name="colorAccent">#f90750</color>
+    <color name="refresh_progress_1">#2da848</color>
+    <color name="refresh_progress_2">#ff5956</color>
+    <color name="refresh_progress_3">#3cb73a</color>
+    <color name="cardview_background">#363636</color>
+</resources>

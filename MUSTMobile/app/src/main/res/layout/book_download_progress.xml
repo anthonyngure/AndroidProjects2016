@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:typeface="serif"
+        android:textColor="@color/theme"
+        android:textSize="16sp"
+        android:text="@string/book_download_message"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reading_advice"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:typeface="serif"
+        android:textColor="@color/red"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/book_download_progress_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:typeface="sans"
+        android:textColor="@color/red"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:text="0% ready." />
+    <Button
+        android:id="@+id/book_download_progress_button_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Open"/>
+
+</LinearLayout>

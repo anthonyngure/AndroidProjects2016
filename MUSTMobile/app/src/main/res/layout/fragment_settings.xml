@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:clickable="true"
+        android:onClick="settingsNotifications"
+        android:id="@+id/settings_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_notifications"
+        android:background="@drawable/cornered_box_background"
+        android:drawableLeft="@drawable/settings_notifications"
+        android:drawableStart="@drawable/settings_notifications"
+        android:gravity="start|center"
+        android:paddingLeft="20dp"
+        android:drawableEnd="@drawable/arrow_forward"
+        android:drawableRight="@drawable/arrow_forward"
+        android:paddingRight="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:clickable="true"
+        android:onClick="settingsAccount"
+        android:id="@+id/settings_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_account"
+        android:background="@drawable/cornered_box_background"
+        android:drawableLeft="@drawable/ic_action_staff"
+        android:drawableStart="@drawable/ic_action_staff"
+        android:gravity="start|center"
+        android:paddingLeft="20dp"
+        android:drawableEnd="@drawable/arrow_forward"
+        android:drawableRight="@drawable/arrow_forward"
+        android:paddingRight="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

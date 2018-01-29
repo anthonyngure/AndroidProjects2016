@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/event_popup_action_share"
+        android:title="@string/action_share"/>
+    <item
+        android:id="@+id/event_popup_action_report"
+        android:title="Report"/>
+    <item
+        android:id="@+id/event_popup_action_buy_ticket"
+        android:title="Buy Ticket"/>
+</menu>

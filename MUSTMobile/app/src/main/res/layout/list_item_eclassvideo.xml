@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/listview_padding">
+
+    <FrameLayout
+        android:id="@+id/list_item_eclassvideo_thumbnail_container"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="5dp"
+        android:background="@color/black"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/list_item_eclassvideo_thumbnail"
+            android:visibility="gone"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitXY"/>
+        <ProgressBar
+            android:id="@+id/list_item_eclassvideo_thumbnail_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <!-- EClassVideoData Name -->
+    <TextView
+        android:id="@+id/list_item_eclassvideo_title"
+        android:layout_toEndOf="@id/list_item_eclassvideo_thumbnail_container"
+        android:layout_toRightOf="@id/list_item_eclassvideo_thumbnail_container"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:textColor="@color/theme"
+        android:textSize="12sp"
+        android:typeface="serif"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/list_item_eclassvideo_author_and_views_container"
+        android:layout_toEndOf="@id/list_item_eclassvideo_thumbnail_container"
+        android:layout_toRightOf="@id/list_item_eclassvideo_thumbnail_container"
+        android:layout_below="@id/list_item_eclassvideo_title">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/light_orange"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:text="@string/label_courtesy"/>
+        <TextView
+            android:id="@+id/list_item_eclassvideo_author"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toEndOf="@id/list_item_eclassvideo_thumbnail_container"
+        android:layout_toRightOf="@id/list_item_eclassvideo_thumbnail_container"
+        android:layout_below="@id/list_item_eclassvideo_author_and_views_container">
+
+        <TextView
+            android:id="@+id/list_item_eclassvideo_views"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_orange"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable" />
+
+        <TextView
+            android:id="@+id/list_item_eclassvideo_upload_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_orange"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

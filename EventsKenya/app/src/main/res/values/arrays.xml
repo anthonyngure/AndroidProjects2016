@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="images_loading">
+        <item>Thumbnails</item>
+        <item>Full images</item>
+    </string-array>
+    <string-array name="images_loading_values">
+        <item>@string/thumbnail</item>
+        <item>@string/full_posters</item>
+    </string-array>
+    <string name="full_posters">images/</string>
+</resources>

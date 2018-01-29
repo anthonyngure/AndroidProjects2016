@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:gravity="top">
+
+    <ke.co.elmaxdevelopers.eventskenya.views.SquaredImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/list_item_avatar_size"
+        android:layout_height="@dimen/list_item_avatar_size"
+        android:background="@drawable/bg_avatar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wednesday Night Hip-Hop"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_toEndOf="@id/avatar"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="15sp"
+        android:textAppearance="@android:color/secondary_text_light_nodisable"/>
+
+    <TextView
+        android:id="@+id/venue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Club Simmers, Moi Avenue"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_toEndOf="@id/avatar"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="14sp"
+        android:textAppearance="@android:color/secondary_text_light_nodisable"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/venue"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_toEndOf="@id/avatar"
+        android:maxLength="175"
+        android:textSize="13sp"
+        android:textAppearance="@android:color/secondary_text_light_nodisable"
+        android:text="@string/cheese_ipsum"/>
+
+    <LinearLayout
+        android:id="@+id/date_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_toEndOf="@id/avatar"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="08:00AM to 12:00PM"
+            android:textSize="10sp"
+            android:id="@+id/time"/>
+
+        <!-- Date -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Jan 25"
+            android:id="@+id/date"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/foo_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_below="@id/date_time"
+        android:orientation="horizontal">
+
+        <!-- No of people going -->
+        <TextView
+            android:id="@+id/no_going"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_is_going"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="@string/zero_going"/>
+
+        <!-- No of people interested -->
+        <TextView
+            android:id="@+id/no_interested"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_is_interested"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="@string/zero_interested"/>
+
+        <!-- No of comments -->
+        <TextView
+            android:id="@+id/no_of_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_comments_unread"
+            android:gravity="center"
+            android:text="@string/zero_interested"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@id/foo_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="bottom"
+        android:background="#cccccc"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+</RelativeLayout>

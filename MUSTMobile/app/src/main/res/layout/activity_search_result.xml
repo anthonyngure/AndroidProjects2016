@@ -1,0 +1,136 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_container_padding"
+    tools:context="com.mustmobile.SearchResultsActivity">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/activity_search_results_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellow_connered_box_bg"
+        android:layout_margin="5dp"
+        android:visibility="visible"
+        android:text="Searching.."
+        android:padding="5dp"
+        android:textColor="@color/red" />
+
+    <FrameLayout
+        android:layout_below="@id/activity_search_results_heading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/activity_search_results_loading_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/nano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"/>
+            <TextView
+                android:layout_below="@id/nano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Searching..."/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_search_results_no_data"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/activity_search_results_no_search_data"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:textAppearance="@android:color/secondary_text_dark_nodisable"
+                android:typeface="serif"/>
+
+            <ImageView
+                android:id="@+id/tosh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_search_results_no_connection"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/no_connection"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/red"
+                android:textAppearance="@android:color/secondary_text_dark_nodisable"
+                android:typeface="serif"
+                android:textSize="16sp"
+                android:text="@string/no_connection_message"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/activity_search_results_retry_button"
+                    android:text="Retry"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:id="@+id/activity_search_results_report_button"
+                    android:visibility="gone"
+                    android:text="Report"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/activity_search_results_listview"
+        android:layout_below="@id/activity_search_results_heading"
+        style="@style/ToshListView">
+    </ListView>
+
+</RelativeLayout>

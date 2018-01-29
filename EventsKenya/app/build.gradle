@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+    defaultConfig {
+        applicationId 'ke.co.elmaxdevelopers.eventskenya'
+        minSdkVersion 11
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+// tyh%RGG
+repositories {
+    jcenter()
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:23.0.0'
+    compile 'com.android.support:design:23.0.0'
+    compile 'com.android.support:cardview-v7:23.0.0'
+    compile(name: 'circleimageview-1.2.1', ext: 'aar')
+    compile(name: 'android-crop-1.0.1', ext: 'aar')
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.android.support:recyclerview-v7:23.0.0'
+    compile files('libs/android-async-http-1.4.9.jar')
+    compile files('libs/httpclient-4.3.3.jar')
+    compile files('libs/joda-time-2.1.jar')
+    compile files('libs/picasso-2.5.2.jar')
+}

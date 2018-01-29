@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Base.Theme.AppTheme">
+        <item name="android:buttonStyle">@style/MyButtons</item>
+    </style>
+
+    <style name="AppThemeFormActivity" parent="Base.Theme.AppTheme">
+        <item name="colorAccent">@color/material_deep_teal_500</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppThemeToolBar" parent="Base.Theme.AppThemeToolBar">
+    </style>
+
+    <style name="Base.Theme.AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+
+    <style name="Base.Theme.AppThemeToolBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="DialogMenu" parent="android:Widget.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?attr/textAppearanceListItem</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DialogMenuDescription" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/menu_description</item>
+    </style>
+
+    <style name="FormButtons" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps" tools:targetApi="ice_cream_sandwich">false</item>
+    </style>
+
+    <style name="FormValues" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyButtons" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps" tools:targetApi="ice_cream_sandwich">false</item>
+    </style>
+
+    <!-- General styles for the list item popup button -->
+    <style name="OverFlow" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/popup</item>
+        <item name="android:textAppearance">?attr/textAppearanceListItem</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Tickets" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:maxLength">5</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <!-- General styles for the linear horizontal wrappers -->
+    <style name="HorizontalLinearWrapper" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- General styles for the no following, no going and reviews no -->
+    <style name="NumberViews" parent="AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">start</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <style name="FollowingGoingUpdateProgress" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:minWidth">24dp</item>
+        <item name="android:maxWidth">24dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:maxHeight">24dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- General styles for the list views -->
+    <style name="ListView" parent="Widget.AppCompat.ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:divider">@color/background_floating_material_light</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarFadeDuration">2000</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:scrollbarDefaultDelayBeforeFade">2000</item>
+        <item name="android:scrollbarSize">3dp</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:fastScrollEnabled">false</item>
+    </style>
+
+    <style name="ListViewContainer" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/listview_padding</item>
+        <item name="android:paddingLeft">@dimen/listview_padding</item>
+    </style>
+
+
+    <style name="CommentContainer" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- General styles for the Event startDate -->
+    <style name="Date" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Jan 30, 2015</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- General styles for the Event Time -->
+    <style name="Time" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">10:00 AM to 06:00 PM</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- General styles for the Event Time -->
+    <style name="ServiceImage" parent="AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="ServiceAllImages" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">220dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <!-- General styles for the Event name -->
+    <style name="Name" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- General styles for the Event Venue -->
+    <style name="Venue" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableStart" tools:targetApi="ice_cream_sandwich">@drawable/map</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- General styles for the about container -->
+    <style name="Description" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
+    </style>
+
+    <style name="CommentContent" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Description</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CommentDetails" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SeeAllComments" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+    <style name="MyBorderLessButtons" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textAppearance">?attr/textAppearanceListItem</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="AddComment" parent="MyBorderLessButtons">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Comment</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <style name="ClickNumberView" parent="AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="EventAction" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DetailsHeader" parent="TextAppearance.AppCompat.Title">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Price" parent="AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+
+    <style name="ServiceAction" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+</resources>

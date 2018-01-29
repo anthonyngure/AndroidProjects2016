@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ke.co.elmaxdevelopers.eventskenya" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppThemeToolBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DetailsActivity"
+            android:theme="@style/AppThemeToolBar" >
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.CommentsActivity"
+            android:parentActivityName=".activity.MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppThemeFormActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+
+        <provider
+            android:name=".database.EventProvider"
+            android:authorities="ke.co.elmaxdevelopers.eventskenya.EventProvider"
+            android:exported="false" >
+        </provider>
+
+        <activity
+            android:name=".activity.ImageViewActivity"
+            android:label="@string/title_activity_image_view"
+            android:parentActivityName=".activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.HelpAndFeedbackActivity"
+            android:label="@string/action_help_and_feedback"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppThemeFormActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ServicesActivity"
+            android:label="@string/title_activity_services"
+            android:parentActivityName=".activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ServiceImagesActivity"
+            android:label="@string/title_activity_service_images"
+            android:parentActivityName=".activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.SearchResultsActivity"
+            android:label="@string/title_activity_search_results"
+            android:launchMode="singleTop" >
+
+            <!-- to identify this activity as "searchable" -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".activity.NewEventActivity"
+            android:label="@string/title_activity_new_event"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppThemeFormActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity
+            android:name=".activity.NewEventPreviewActivity"
+            android:label="@string/title_activity_preview" >
+        </activity>
+        <activity
+            android:name=".activity.ObsoleteActivity"
+            android:label="@string/title_activity_obsolete" >
+        </activity>
+        <activity
+            android:name=".activity.NewCardActivity"
+            android:label="@string/title_activity_new_card"
+            android:parentActivityName=".activity.ServicesActivity"
+            android:theme="@style/AppThemeFormActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.ServicesActivity" />
+        </activity>
+        <activity
+            android:name=".activity.NewCardPreviewActivity"
+            android:label="@string/title_activity_new_card_preview"
+            android:parentActivityName=".activity.NewCardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.NewCardActivity" />
+        </activity>
+        <activity
+            android:name=".activity.StarterSettingsActivity"
+            android:label="@string/title_activity_starter_settings" >
+        </activity>
+    </application>
+
+</manifest>

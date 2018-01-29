@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Event Image -->
+<ke.co.elmaxdevelopers.eventskenya.views.SquaredFrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/list_item_event_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <ke.co.elmaxdevelopers.eventskenya.views.ProgressWheel
+        android:id="@+id/list_item_event_image_loader"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        ProgressWheel:pwText="poster..."
+        ProgressWheel:pwTextColor="@android:color/secondary_text_light"
+        ProgressWheel:pwTextSize="10sp"
+        ProgressWheel:pwBarWidth="3dp"
+        ProgressWheel:pwBarLength="20dp"
+        ProgressWheel:pwRimWidth="3dp"/>
+
+</ke.co.elmaxdevelopers.eventskenya.views.SquaredFrameLayout>

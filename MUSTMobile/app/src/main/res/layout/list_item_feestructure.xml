@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/default_container_padding"
+    android:background="@drawable/cornered_box_background"
+    android:baselineAligned="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:text="1. FIRST SEMESTER"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="3"
+        android:layout_marginBottom="@dimen/default_bottom_margin">
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                style="@style/TableItem"/>
+            <TextView
+                style="@style/TableItemChargeFor"/>
+            <TextView
+                android:text="Amt. (KShs.)"
+                style="@style/TableItemAmount"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                style="@style/TableItemNumber"
+                android:text="A."/>
+            <TextView
+                android:text="TUITION"
+                style="@style/TableItemChargeFor"/>
+            <TextView
+                android:id="@+id/list_item_feestructure_tuition_sem_one"
+                style="@style/TableItemAmount"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                style="@style/TableItemNumber"
+                android:text="B."/>
+            <TextView
+                android:text="OTHER CHARGES:"
+                style="@style/TableItemChargeFor"/>
+
+            <TextView
+                style="@style/TableItemAmount"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                style="@style/TableItemNumber"
+                android:text="1"/>
+            <TextView
+                android:text="Registration fee"
+                style="@style/TableItemChargeFor"/>
+            <TextView
+                android:id="@+id/list_item_feestructure_registration_fee"
+                style="@style/TableItemAmount"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                style="@style/TableItemNumber"
+                android:text="2"/>
+            <TextView
+                android:text="Examination "
+                style="@style/TableItemChargeFor"/>
+            <TextView
+                android:id="@+id/list_item_feestructure_examination_sem_one"
+                style="@style/TableItemAmount"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                style="@style/TableItem"
+                android:text="2"/>
+            <TextView
+                android:text="Medical Subscription"
+                style="@style/TableItemChargeFor"/>
+            <TextView
+                android:id="@+id/list_item_feestructure_medical_sem_one"
+                style="@style/TableItemAmount"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                style="@style/TableItem"
+                android:text="3"/>
+            <TextView
+                android:text="Activity fee"
+                style="@style/TableItemChargeFor"/>
+            <TextView
+                android:id="@+id/list_item_feestructure_activity_sem_one"
+                style="@style/TableItemAmount"/>
+        </TableRow>
+
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                style="@style/TableItem"
+                android:text="5"/>
+            <TextView
+                android:text="Computer fees/internet"
+                style="@style/TableItemChargeFor"/>
+            <TextView
+                android:id="@+id/list_item_feestructure_internet_sem_one"
+                style="@style/TableItemAmount"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                style="@style/TableItem"
+                android:text="6"/>
+            <TextView
+                android:text="Field/Academic trip"
+                style="@style/TableItemChargeFor"/>
+            <TextView
+                android:id="@+id/list_item_feestructure_trip_sem_one"
+                style="@style/TableItemAmount"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                style="@style/TableItem"
+                android:text="7"/>
+            <TextView
+                android:text="Library fee"
+                style="@style/TableItemChargeFor"/>
+            <TextView
+                android:id="@+id/list_item_feestructure_library_sem_one"
+                style="@style/TableItemAmount"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                style="@style/TableItem"
+                android:text="8"/>
+            <TextView
+                android:text="Student union"
+                style="@style/TableItemChargeFor"/>
+            <TextView
+                android:id="@+id/list_item_feestructure_student_union_sem_one"
+                style="@style/TableItemAmount"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyles">
+
+            <TextView
+                style="@style/TableItem" />
+            <TextView
+                android:text="TOTAL PAYABLE"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:textAppearance="@android:color/secondary_text_dark_nodisable"/>
+            <TextView
+                android:id="@+id/list_item_feestructure_total_payable_sem_one"
+                style="@style/TableItemAmount"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:text="2. SECOND SEMESTER"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="TUITION FEES"/>
+        <TextView
+            android:id="@+id/list_item_feestructure_tuition_sem_two"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/FeeStructureHeadings"
+        android:text="OTHER CHARGES"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Examination"/>
+
+        <TextView
+            android:id="@+id/list_item_feestructure_examination_sem_two"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Medical Subscription"/>
+
+        <TextView
+            android:id="@+id/list_item_feestructure_medical_sem_two"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Activity fee"/>
+
+        <TextView
+            android:id="@+id/list_item_feestructure_activity_sem_two"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="Computer fees/internet"/>
+
+        <TextView
+            android:id="@+id/list_item_feestructure_internet_sem_two"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Field/ Academic trip"/>
+        <TextView
+            android:id="@+id/list_item_feestructure_trip_sem_two"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Library fee"/>
+
+        <TextView
+            android:id="@+id/list_item_feestructure_library_sem_two"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="TOTAL PAYABLE"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"/>
+
+        <TextView
+            android:id="@+id/list_item_feestructure_total_payable_sem_two"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:text="3. Accommodation"/>
+
+    <TextView
+        android:id="@+id/list_item_feestructure_accomodation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/list_item_feestructure_attachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/attachment_remarks"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:text="5. PAYMENT OF FEES"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fee_remarks"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            style="@style/TableRowStyles">
+            <TextView
+                style="@style/TableItem"
+                android:text="Bank"/>
+            <TextView
+                style="@style/TableItem"
+                android:text="Bank Account"/>
+        </TableRow>
+        <TableRow
+            style="@style/TableRowStyles">
+            <TextView
+                style="@style/TableItem"
+                android:text="Kenya Commercial Bank"/>
+            <TextView
+                style="@style/TableItem"
+                android:text="1117775917"/>
+        </TableRow>
+        <TableRow
+            style="@style/TableRowStyles">
+            <TextView
+                style="@style/TableItem"
+                android:text="National Bank of Kenya"/>
+            <TextView
+                style="@style/TableItem"
+                android:text="0124239008700"/>
+        </TableRow>
+        <TableRow
+            style="@style/TableRowStyles">
+            <TextView
+                style="@style/TableItem"
+                android:text="Cooperative Bank of Kenya"/>
+            <TextView
+                style="@style/TableItem"
+                android:text="0112937844000"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:text="@string/money_remarks"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:text="@string/helb_remarks"/>
+
+
+</LinearLayout>

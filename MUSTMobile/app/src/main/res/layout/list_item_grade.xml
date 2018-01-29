@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/default_container_padding">
+
+    <TextView
+        android:id="@+id/list_item_grade_grade"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/list_item_grade_unit_code"
+        android:layout_toRightOf="@id/list_item_grade_grade"
+        android:layout_toEndOf="@id/list_item_grade_grade"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/theme"
+        android:typeface="serif"
+        android:textSize="14sp"
+        android:text="@string/placeholder_book_title"/>
+
+    <TextView
+        android:id="@+id/list_item_grade_unit_name"
+        android:layout_toRightOf="@id/list_item_grade_grade"
+        android:layout_toEndOf="@id/list_item_grade_grade"
+        android:layout_below="@id/list_item_grade_unit_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:typeface="sans"
+        android:textSize="12sp"
+        android:text="@string/placeholder_authors"/>
+
+</RelativeLayout>

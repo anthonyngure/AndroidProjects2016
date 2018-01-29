@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="counties">
+        <item>Everywhere</item>
+        <item>Nairobi County</item>
+        <item>Mombasa County</item>
+        <item>Machakos County</item>
+        <item>Kisumu County</item>
+        <item>Nakuru County</item>
+        <item>Meru County</item>
+        <item>Kiambu County</item>
+        <item>Kakamega County</item>
+        <item>Embu County</item>
+        <item>Nyeri County</item>
+        <item>Kilifi County</item>
+        <item>Lamu County</item>
+        <item>Baringo County</item>
+        <item>Bomet County</item>
+        <item>Bungoma County</item>
+        <item>Busia County</item>
+        <item>Elgeyo Marakwet County</item>
+        <item>Garissa County</item>
+        <item>Homa Bay County</item>
+        <item>Isiolo County</item>
+        <item>Kajiado County</item>
+        <item>Kericho County</item>
+        <item>Kirinyiga County</item>
+        <item>Kisii County</item>
+        <item>Kitui County</item>
+        <item>Kwale County</item>
+        <item>Laikipia County</item>
+        <item>Makueni County</item>
+        <item>Mandera County</item>
+        <item>Mogori County</item>
+        <item>Marsabit County</item>
+        <item>Muranga County</item>
+        <item>Nandi County</item>
+        <item>Narok County</item>
+        <item>Nyamira County</item>
+        <item>Nyandarua County</item>
+        <item>Samburu County</item>
+        <item>Siaya County</item>
+        <item>Taita Taveta County</item>
+        <item>Tana River County</item>
+        <item>Tharaka Nithi County</item>
+        <item>Trans Nzoia County</item>
+        <item>Turkana County</item>
+        <item>Uasin Gishu County</item>
+        <item>Vihiga County</item>
+        <item>Wajir County</item>
+        <item>West Pockot County</item>
+    </string-array>
+
+    <string-array name="post_counties">
+        <item>Nairobi County</item>
+        <item>Mombasa County</item>
+        <item>Machakos County</item>
+        <item>Kisumu County</item>
+        <item>Nakuru County</item>
+        <item>Meru County</item>
+        <item>Kiambu County</item>
+        <item>Kakamega County</item>
+        <item>Embu County</item>
+        <item>Nyeri County</item>
+        <item>Kilifi County</item>
+        <item>Lamu County</item>
+        <item>Baringo County</item>
+        <item>Bomet County</item>
+        <item>Bungoma County</item>
+        <item>Busia County</item>
+        <item>Elgeyo Marakwet County</item>
+        <item>Garissa County</item>
+        <item>Homa Bay County</item>
+        <item>Isiolo County</item>
+        <item>Kajiado County</item>
+        <item>Kericho County</item>
+        <item>Kirinyiga County</item>
+        <item>Kisii County</item>
+        <item>Kitui County</item>
+        <item>Kwale County</item>
+        <item>Laikipia County</item>
+        <item>Makueni County</item>
+        <item>Mandera County</item>
+        <item>Mogori County</item>
+        <item>Marsabit County</item>
+        <item>Muranga County</item>
+        <item>Nandi County</item>
+        <item>Narok County</item>
+        <item>Nyamira County</item>
+        <item>Nyandarua County</item>
+        <item>Samburu County</item>
+        <item>Siaya County</item>
+        <item>Taita Taveta County</item>
+        <item>Tana River County</item>
+        <item>Tharaka Nithi County</item>
+        <item>Trans Nzoia County</item>
+        <item>Turkana County</item>
+        <item>Uasin Gishu County</item>
+        <item>Vihiga County</item>
+        <item>Wajir County</item>
+        <item>West Pockot County</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>All event categories</item>
+        <item>Music, Nightlife &amp; Entertainment</item>
+        <item>Performing and Visual Arts</item>
+        <item>Business and Professional</item>
+        <item>Food and Drink</item>
+        <item>Kids events</item>
+        <item>Health and Wellness</item>
+        <item>Science and Technology</item>
+        <item>Home and Lifestyle</item>
+        <item>Community and Culture</item>
+        <item>Religion and Spirituality</item>
+        <item>Charity and Causes</item>
+        <item>Fashion and Beauty</item>
+        <item>Hobbies and Special Interest</item>
+        <item>Government and Politics</item>
+        <item>Sports and Fitness</item>
+    </string-array>
+
+    <string-array name="post_categories">
+        <item>Music, Nightlife &amp; Entertainment</item>
+        <item>Festivals</item>
+        <item>Performing and Visual Arts</item>
+        <item>Business and Professional</item>
+        <item>Food and Drink</item>
+        <item>Kids events</item>
+        <item>Health and Wellness</item>
+        <item>Science and Technology</item>
+        <item>Home and Lifestyle</item>
+        <item>Community and Culture</item>
+        <item>Religion and Spirituality</item>
+        <item>Charity and Causes</item>
+        <item>Fashion and Beauty</item>
+        <item>Hobbies and Special Interest</item>
+        <item>Government and Politics</item>
+        <item>Sports and Fitness</item>
+    </string-array>
+
+</resources>

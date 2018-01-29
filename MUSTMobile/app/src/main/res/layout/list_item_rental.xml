@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/default_container_padding">
+
+    <FrameLayout
+        android:id="@+id/list_item_rental_cover_container"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/list_item_rental_image"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+        <ProgressBar
+            android:id="@+id/list_item_rental_image_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/list_item_rental_name"
+        android:layout_toRightOf="@id/list_item_rental_cover_container"
+        android:layout_toEndOf="@id/list_item_rental_cover_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/theme"
+        android:textAppearance="@android:color/secondary_text_dark_nodisable"
+        android:textSize="12sp"
+        android:typeface="serif"/>
+
+    <LinearLayout
+        android:id="@+id/list_item_rental_price_container"
+        android:layout_toRightOf="@id/list_item_rental_cover_container"
+        android:layout_toEndOf="@id/list_item_rental_cover_container"
+        android:layout_below="@id/list_item_rental_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_orange"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:text="Price : "/>
+
+        <TextView
+            android:id="@+id/list_item_rental_price"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textColor="@color/black"
+            android:text="Price"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_item_rental_location_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/list_item_rental_cover_container"
+        android:layout_toEndOf="@id/list_item_rental_cover_container"
+        android:layout_below="@id/list_item_rental_price_container">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_orange"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:text="Location : "/>
+
+        <TextView
+            android:id="@+id/list_item_rental_location"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textColor="@color/black"
+            android:text="Location"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_item_rental_distance_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/list_item_rental_cover_container"
+        android:layout_toEndOf="@id/list_item_rental_cover_container"
+        android:layout_below="@id/list_item_rental_location_container">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_orange"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:text="Distance : "/>
+
+        <TextView
+            android:id="@+id/list_item_rental_distance"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textColor="@color/black"
+            android:text="Distance"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/list_item_rental_cover_container"
+        android:layout_toEndOf="@id/list_item_rental_cover_container"
+        android:layout_below="@id/list_item_rental_distance_container">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_orange"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:text="Contact : "/>
+
+        <TextView
+            android:id="@+id/list_item_rental_contact"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/secondary_text_dark_nodisable"
+            android:textColor="@color/black"
+            android:text="Contact"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
